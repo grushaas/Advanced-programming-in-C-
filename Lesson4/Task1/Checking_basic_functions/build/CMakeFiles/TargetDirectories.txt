@@ -1,0 +1,6 @@
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/CMakeFiles/MyProject1Test.dir
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/CMakeFiles/ALL_BUILD.dir
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/CMakeFiles/ZERO_CHECK.dir
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/Catch2-build/CMakeFiles/ALL_BUILD.dir
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/Catch2-build/src/CMakeFiles/Catch2.dir
+C:/My folder/Netology/Homework/Advanced programming in cpp/Lesson4/Task1/Checking_basic_functions/build/Catch2-build/src/CMakeFiles/Catch2WithMain.dir
