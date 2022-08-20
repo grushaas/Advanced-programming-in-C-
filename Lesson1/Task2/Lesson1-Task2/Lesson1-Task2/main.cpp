@@ -32,17 +32,17 @@ void Getting_the_result()
 
 	if (std::holds_alternative<int>(value))
 	{
-		int num = std::get<int>(value) * 2;
+		auto num = std::get<int>(value) * 2;
 		std::cout << num << std::endl;
 	}
 	else if (std::holds_alternative<std::string>(value))
 	{
-		std::string string = std::get<std::string>(value);
+		auto string = std::get<std::string>(value);
 		std::cout << string << std::endl;
 	}
 	else if (std::holds_alternative<std::vector<int>>(value))
 	{
-		std::vector<int> vec = std::get<std::vector<int>>(value);
+		auto vec = std::get<std::vector<int>>(value);
 		std::for_each(vec.cbegin(), vec.cend(), [](int n)
 			{
 				std::cout << n << " ";
