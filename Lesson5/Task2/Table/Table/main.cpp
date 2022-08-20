@@ -7,6 +7,7 @@ class Table
 private:
 	T rows = 0;
 	T cols = 0;
+	T size = 0;
 	T** arr = nullptr;
 
 public:
@@ -18,6 +19,7 @@ public:
 		{
 			arr[i] = new int[cols];
 		}
+		size = rows * cols;
 	}
 
 	~Table()
@@ -31,7 +33,7 @@ public:
 		
 	}
 
-	T const Size()
+	T Size()
 	{
 		return rows * cols;
 	}
@@ -49,9 +51,9 @@ public:
 
 int main()
 {
-	auto table = Table<int>(2, 3);
+	const Table<int> table = Table<int>(2, 3);
 	table[0][0] = 4;
 	std::cout << table[0][0] << std::endl;
 
-	std::cout << "Array size: " << table.Size() << std::endl;
+	table.Size();
 }
