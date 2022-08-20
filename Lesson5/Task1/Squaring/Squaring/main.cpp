@@ -8,8 +8,8 @@ T squaring(T a)
 	return a * a;
 }
 
-template <class Y>
-void squaringVector(std::vector<Y>& xs)
+template <class T>
+void squaring(std::vector<T>& xs)
 {
 	for (int i = 0; i < xs.size(); ++i)
 	{
@@ -19,8 +19,6 @@ void squaringVector(std::vector<Y>& xs)
 
 int main()
 {
-
-
 	int num = 10;
 	std::vector<int> nums = { -1, 4, 8 };
 	auto print = [](int n)
@@ -36,7 +34,6 @@ int main()
 	std::cout << std::endl;
 
 	std::cout << "[OUT]: ";
-	squaringVector(nums);
+	squaring(nums);
 	std::for_each(nums.cbegin(), nums.cend(), print);
-	
 }
