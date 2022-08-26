@@ -5,8 +5,8 @@ template<class T>
 class Table
 {
 private:
-	T rows = 0;
-	T cols = 0;
+	T const rows = 0;
+	T const cols = 0;
 	T size = 0;
 	T** arr = nullptr;
 
@@ -33,9 +33,9 @@ public:
 		
 	}
 
-	T Size()
+	T Size() const
 	{
-		return rows * cols;
+		return size;
 	}
 
 	T* operator[](const T i) const
