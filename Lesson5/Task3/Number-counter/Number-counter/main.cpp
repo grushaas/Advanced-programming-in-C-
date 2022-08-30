@@ -4,10 +4,6 @@
 
 class Functor
 {
-private:
-	int count = 0;
-	int sum = 0;
-
 public:
 	int Get_sum() const
 	{
@@ -19,15 +15,19 @@ public:
 		return count;
 	}
 
-	void operator()()
+	void operator()(int n)
 	{
-		int n;
 		if (!(n % 3))
 		{
 			sum += n;
 			++count;
 		}
 	}
+
+private:
+	int sum = 0;
+	int count = 0;
+
 };
 
 int main()
