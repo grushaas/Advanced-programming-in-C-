@@ -17,7 +17,7 @@ public:
 
 	void add_element(int element)
 	{
-		if (logical_size > amount) throw Except_length("The logical size exceeds the size of the entire array");
+		if (logical_size >= amount) throw Except_length("The logical size exceeds the size of the entire array");
 		smart_array[logical_size] = element;
 		logical_size += 1;
 	}
