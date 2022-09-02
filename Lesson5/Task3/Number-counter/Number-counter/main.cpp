@@ -34,7 +34,7 @@ int main()
 {
 	std::vector<int> numbers = { 4, 1, 3, 6, 25, 54 };
 	Functor func;
-	std::for_each(numbers.begin(), numbers.end(), func);
-	std::cout << func.Get_sum() << std::endl;
-	std::cout << func.Get_count() << std::endl;
+	func = std::for_each(numbers.begin(), numbers.end(), func);
+	std::cout << "[OUT]: Get_sum() = " << func.Get_sum() << std::endl;
+	std::cout << "[OUT]: Get_count() = " << func.Get_count() << std::endl;
 }
