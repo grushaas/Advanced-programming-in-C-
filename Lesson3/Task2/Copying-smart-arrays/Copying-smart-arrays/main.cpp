@@ -13,7 +13,18 @@ public:
 		smart_array = new int[amount];
 	}
 
-	Smart_Array(const Smart_Array& other) : Smart_Array(other.amount) {}
+	Smart_Array(const Smart_Array& other)
+	{
+		amount = other.amount;
+		logical_size = other.logical_size;
+
+		smart_array = new int[amount]();
+		
+		for (int i = 0; i < logical_size; i++)
+		{
+			smart_array[i] = other.smart_array[i];
+		}
+	}
 
 	~Smart_Array()
 	{
