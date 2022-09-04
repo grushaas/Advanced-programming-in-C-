@@ -41,6 +41,6 @@ int main()
 	std::multimap<int, char> dst = flip_map(frequency);
 	for (std::multimap<int, char>::reverse_iterator itr = dst.rbegin(); itr != dst.rend(); itr++)
 	{
-		//And now how to output the iterator to the console for multimap
+		std::cout << itr->first << ": " << itr->second << std::endl;
 	}
 }
