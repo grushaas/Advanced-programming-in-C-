@@ -20,10 +20,10 @@ public:
 
 		smart_array = new int[amount]();
 		
-		for (int i = 0; i < logical_size; i++)
-		{
-			smart_array[i] = other.smart_array[i];
-		}
+		//for (int i = 0; i < logical_size; i++)
+		//{
+		//	smart_array[i] = other.smart_array[i];
+		//}
 	}
 
 	~Smart_Array()
@@ -45,12 +45,15 @@ public:
 
 	Smart_Array operator=(const Smart_Array& other)
 	{
-		if (other.amount > amount)
+		delete[] smart_array;
+
+		for (int i = 0; i < other.logical_size; ++i)
 		{
-			delete[] smart_array;
-			return *this = Smart_Array(other);
+			smart_array[i] = other.smart_array[i];
 		}
-		return *this = Smart_Array(other);
+
+		return *this;
+	
 	}
 
 };
@@ -68,5 +71,5 @@ int main()
 
 	arr = newArr;
 
-	std::cout << arr.get_element(0);
+	std::cout << arr.get_element(1);
 }
