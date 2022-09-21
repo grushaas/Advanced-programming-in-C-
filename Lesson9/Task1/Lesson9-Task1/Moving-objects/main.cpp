@@ -1,13 +1,17 @@
 #include <vector>
 #include <string>
+#include <algorithm>
 #include <iostream>
 
 template <class T>
 void Move_vectors(T& one, T& two)
 {
-	T tmp = std::move(two);
+	T tmp = one;
 	one = std::move(two);
-	two = std::move(tmp);
+	for (int i = 0; i < tmp.size(); ++i)
+	{
+		two.push_back(tmp[i]);
+	}
 }
 
 int main()
