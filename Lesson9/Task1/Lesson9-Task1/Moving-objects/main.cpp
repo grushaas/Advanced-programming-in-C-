@@ -6,12 +6,9 @@
 template <class T>
 void Move_vectors(T& one, T& two)
 {
-	T tmp = one;
+	T tmp = std::move(one);
 	one = std::move(two);
-	for (int i = 0; i < tmp.size(); ++i)
-	{
-		two.push_back(tmp[i]);
-	}
+	two = std::move(tmp);
 }
 
 int main()
