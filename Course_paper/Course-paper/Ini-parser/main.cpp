@@ -1,6 +1,8 @@
 #include <iostream>
+#include <sstream>
 #include <fstream>
 #include <string>
+#include <regex>
 #include <vector>
 
 //template<class T>
@@ -9,65 +11,44 @@ class Ini_parser
 private:
 	std::string fileName;
 
-	void tokenize(std::string const& str, const char symbol, std::vector<std::string>& out)
-	{
-		std::stringstream ss(str);
-
-		std::string s;
-		while (std::getline(ss, s, symbol))
-		{
-			out.push_back(s);
-		}
-	}
-
 public:
 	Ini_parser(std::string fileName) : fileName(fileName) {}
 	
 	template<class T>
-	T getValue(std::string sectionAndValue)
+	T getValue(std::string value_section, std::string value_var)
 	{
-		std::string sectionIniFile;
-		std::string variable;
-		char symbol = ".";
-		std::vector<std::string> out;
-		std::vector<std::string> resultVector;
-		T result
-			std::ifstream iniFile(fileName);
+		T result;
+		std::ifstream ini(fileName);
 
-		tokenize(sectionAndValue, symbol, out);
-
-		if (iniFile.is_open())
+		std::regex section(value_section);
+		std::regex var(value_var);
+		while (!ini.eof())
 		{
-			continue;
+			std::string string;
+			ini >> string;
+			if (std::regex_search(string, section))
+			{
+				//std::cout << string << std::endl;
+				ini >> string;
+				if (std::regex_search(string, var))
+				{
+					std::smatch matched;
+					if (std::regex_search(string, matched, std::regex("=(\d+)")))
+					{
+						std::cout << matched[0] << std::endl;
+					}
+					
+				}
+			}
 		}
-		else
-		{
-			return 1;
-		}
-
-		do
-		{
-			iniFile >> sectionIniFile;
-
-		} while (out[0] != sectionIniFile);
-
-		do
-		{
-			iniFile >> variable;
-
-		} while (out[1] != variable);
-
-		symbol = "=";
-
-		tokenize(variable, symbol, resultVector);
-
-		result = std::stoi(resultVector[2]);
-
-		return result;
+		return 0;
 	}
 };
 
 int main()
 {
+	std::string sectionAndValue = "Section1.var1";
 	Ini_parser parser("file.ini");
+	parser.getValue<int>("Section1", "var1");
+	parser.getValue<std::string>("Section1", "var2");
 }
