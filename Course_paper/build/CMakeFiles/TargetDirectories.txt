@@ -1,0 +1,5 @@
+/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/CMakeFiles/edit_cache.dir
+/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/CMakeFiles/rebuild_cache.dir
+/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/src/CMakeFiles/main.dir
+/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/src/CMakeFiles/edit_cache.dir
+/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/src/CMakeFiles/rebuild_cache.dir

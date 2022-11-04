@@ -1,8 +1,8 @@
-#include "Ini_parser.h"
+#include "../include/IniParser.h"
 
 IniParser::IniParser(std::string fileName)
 {
-	iniFile.open(fileName);
+   iniFile.open(fileName);
 	std::string str;
 	std::string section;
 

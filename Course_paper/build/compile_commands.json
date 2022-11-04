@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/src",
+  "command": "/usr/bin/g++  -I/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/../include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/main.dir/IniParser.cpp.o -c /home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/IniParser.cpp",
+  "file": "/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/IniParser.cpp"
+},
+{
+  "directory": "/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/build/src",
+  "command": "/usr/bin/g++  -I/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/../include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/main.cpp",
+  "file": "/home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/src/main.cpp"
+}
+]
