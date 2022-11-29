@@ -1,1 +1,0 @@
-/usr/bin/g++ -O3 -DNDEBUG -rdynamic CMakeFiles/main.dir/IniParser.cpp.o CMakeFiles/main.dir/main.cpp.o -o /home/grusha/Документы/Netology/Homeworks/Advanced_cpp_programming/Advanced-programming-in-C-/Course_paper_new/bin/main 
